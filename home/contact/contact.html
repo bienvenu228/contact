@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./contact.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="../acceuil.html">Accueil</a>
+      <a href="../service.html">Services</a>
+      <!-- <a href="./contact.html">Contact</a> -->
+      <a href="../collaborateur/coll.html">Collaborateurs</a>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="form-socials">
+          <!-- Formulaire -->
+          <div class="form-section">
+            <h1>Contactez-nous</h1>
+            <p>Nous serions ravis de vous entendre. Remplissez le formulaire ci-dessous :</p>
+            <form action="serveur.php" method="POST">
+              <input type="text" name="nom" placeholder="Votre nom" required>
+              <input type="email" name="email" placeholder="Votre email" required>
+              <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+
+          <!-- Réseaux sociaux et infos -->
+          <div class="socials">
+            <h2>Suivez-nous</h2>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/tonProfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/tonProfil" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/tonProfil" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/tonProfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/22890366325?text=Bonjour%20Linux%20Holding!" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.tiktok.com/@linux_holding" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+
+            <!-- Infos d'adresse -->
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> 71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UNITED
+                KINGDOM</p>
+              <p><i class="fa-solid fa-phone"></i> +228 90366325</p>
+              <p><i class="fa-solid fa-phone"></i> +49 15560531190</p>
+
+              <p><i class="fas fa-envelope"></i> linuxholding@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   <header>
+        <div class="logo"> <!--<img src="./photo/IMG_7558.PNG" alt="logo" class="logose">--> </div>
+        <nav> 
+            <a href="./acceuil.html">Accueil</a> 
+            <!-- <a href="./service.html">Services</a>  -->
+            <a href="./contact/contact.html">Contact</a>
+            <a href="./collaborateur/coll.html">Collaborateurs</a> 
+        </nav>
+    </header>
+     <!-- Accueil -->
+    <section class="Accueil" id="acceuil">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Linux Holding LTD</h1>
+                <p>Linux Holding, votre partenaire de confiance en solutions numériques et technologiques. Nous vous
+                    accompagnons dans votre transformation digitale avec innovation, sécurité et performance. </p>
+                <div class="buttons"> <a href="./contact/contact.html" class="btn primary">Contactez-nous</a> <a
+                        href="./collaborateur/coll.html" class="btn secondary">Découvrir nos collaborations</a> </div>
+            </div>
+            <div class="profile-pic"> <img src="../photo/IMG_7558.PNG" alt="logo" class="logose"> </div>
+        </section>
+   <section class="service" id="service">
+        <section class="intro">
+            <div>
+                <h2>Nos services</h2>
+                <p> Linux Holding propose des solutions numériques et technologiques adaptées à chaque entreprise :
+                    cybersécurité, développement digital et accompagnement dans la transformation digitale. </p>
+            </div>
+        </section>
+        <section class="services">
+            <div class="card"> <i class="fas fa-rocket icon red"></i>
+                <h3>Conseil digital & Création d'entreprises</h3>
+                <p> • Stratégie digitale <br> • Création d'entreprises <br> • Accompagnement freelances/startups
+                    africaines à l'international <br> • Coaching en e-business et leadership <br> • Conseil en
+                    domiciliation et création de sociétés offshore </p>
+            </div>
+            <div class="card"> <i class="fas fa-laptop-code icon green"></i>
+                <h3>Services numériques et technologiques</h3>
+                <p> • Création de sites web et applications (sous-traitance incluse) <br> • Vente ou intermédiaire de
+                    services numériques <br> • Gestion de plateformes en ligne (e-learning, marketplaces, SaaS) <br> •
+                    Administration de communautés en ligne <br> • Support technique à distance </p>
+            </div>
+            <div class="card"> <i class="fas fa-handshake icon blue"></i>
+                <h3>Intermédiation & Business development</h3>
+                <p> • Mise en relation clients / prestataires <br> • Négociation de partenariats inter-entreprises <br>
+    4                • Agent commercial indépendant pour produits/services <br> • Relais local pour sociétés étrangères
+                    (prospection, sourcing, présence virtuelle) </p>
+            </div>
+            <div class="card"> <i class="fas fa-chart-line icon purple"></i>
+                <h3>Holding et Gestion de projets</h3>
+                <p> • Possession de sociétés en Holding <br> • Coordination de projets multi-entreprises <br> • Gestion
+                    administrative et financière à distance <br> • Centralisation de facturation et contrats </p>
+            </div>
+            <div class="card"> <i class="fas fa-sync-alt icon yellow"></i>
+                <h3>Prestations flexibles</h3>
+                <p> • Organisation d'évènements et webinaires professionnels <br> • Formation informelle et mentorat
+                    <br> • Rédaction de contenus professionnels <br> • Création et gestion de communautés
+                    d'entrepreneurs </p>
+            </div>
+            <div class="card"> <i class="fas fa-shield-alt icon indigo"></i>
+                <h3>Cybersécurité</h3>
+                <p>Protégez vos données et vos systèmes contre les menaces numériques.</p>
+            </div>
+        </section>
+          <section class="cta">
+            <h3>Prêt à développer votre entreprise ?</h3> <a href="./contact/contact.html" class="btn">Contactez-nous</a>
+        </section>
+  <footer>
+        <div class="containers">
+            <small>© <span id="year"></span> Linux Holding. Tous droits réservés.</small>
+        </div>
+    </footer>
+
+    <script>
+        // Mettre à jour l'année automatiquement
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

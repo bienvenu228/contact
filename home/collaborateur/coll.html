@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondateur & Collaborateurs</title>
+    <link rel="stylesheet" href="./coll.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="menu">
+            <nav> 
+                <a href="../acceuil.html">Accueil</a> 
+                <a href="../contact/contact.html">Contact</a>
+                <a href="../service.html">Services</a> 
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fondateur -->
+    <section class="fondateur">
+        <img src="../../photo/chef.png" alt="Photo du fondateur" class="photo-fondateur">
+        <h1>Komlavi Paul GBODUI</h1>
+        <p><strong>Numéro d'entreprise :</strong> 16126599</p>
+        <p><strong>Adresse :</strong> 71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UNITED KINGDOM</p>
+    </section>
+
+    <!-- Collaborateurs -->
+    <section class="collaborateurs">
+        <h2>Nos Collaborateurs</h2>
+        <div class="liste-collaborateurs">
+            <div class="carte">
+                <img src="../../photo/col.png" alt="Collaborateur 1">
+                <h3>Bienvenu MAYIKOU</h3>
+                <p>Développeur Web</p>
+            </div>
+            <div class="carte">
+                <img src="../../photo/col.png" alt="Collaborateur 2">
+                <h3>Solenne TOMETY</h3>
+                <p>Développeur Web</p>
+            </div>
+            <div class="carte">
+                <img src="../../photo/col.png" alt="Collaborateur 3">
+                <h3>Afi TSEVI</h3>
+                <p>Développeur Web</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="containers">
+            <small>© <span id="year"></span> Linux Holding. Tous droits réservés.</small>
+        </div>
+    </footer>
+
+    <script>
+        // Mettre à jour l'année automatiquement
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

@@ -1,20 +1,48 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Body */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f2f4f9;
-  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #0D1B2A;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1D9BF0;
 }
 
 .container {
-  flex: 1; 
+  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -22,6 +50,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  gap: 20px;
 }
 
 .form-socials {
@@ -31,7 +60,8 @@ body {
   width: 100%;
 }
 
-.form-section {
+.form-section,
+.socials {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
@@ -56,7 +86,8 @@ form {
   flex-direction: column;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   margin-bottom: 12px;
   border: 1px solid #ccc;
@@ -66,7 +97,8 @@ input, textarea {
   transition: all 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #0077ff;
   box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
 }
@@ -91,11 +123,6 @@ button:active {
 }
 
 .socials {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  width: 45%; 
   text-align: center;
 }
 
@@ -120,14 +147,29 @@ button:active {
   transform: scale(1.2);
 }
 
+.fa-facebook-f {
+  color: #3b5998;
+}
 
-.fa-facebook-f { color: #3b5998; }
-.fa-twitter { color: #1da1f2; }
-.fa-instagram { color: #e4405f; }
-.fa-linkedin-in { color: #0077b5; }
-.fa-whatsapp { color: #25d366; }
-.fa-tiktok { color: #000000; }
+.fa-twitter {
+  color: #1da1f2;
+}
 
+.fa-instagram {
+  color: #e4405f;
+}
+
+.fa-linkedin-in {
+  color: #0077b5;
+}
+
+.fa-whatsapp {
+  color: #25d366;
+}
+
+.fa-tiktok {
+  color: #000000;
+}
 
 footer {
   background: #0D1B2A;
@@ -138,25 +180,57 @@ footer {
   margin-top: auto;
 }
 
-footer p{
+footer p {
   font-weight: bold;
-   color: white;
-  opacity: 500%;
+  color: white;
+  opacity: 0.8;
 }
 
+/* 📱 Responsive Design */
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
+/* Tablettes */
+@media (max-width: 992px) {
   .form-socials {
     flex-direction: column;
     gap: 20px;
   }
 
-  .form-section, .socials {
+  .form-section,
+  .socials {
     width: 100%;
   }
+
+  .container {
+    padding: 20px;
+  }
 }
+
+/* Mobiles */
+/* Mobiles */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;  
+    flex-wrap: wrap;   
+    justify-content: center;
+    gap: 10px;          
+  }
+
+  nav a {
+    padding: 6px 10px; /* réduire l'espace pour mobile */
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
